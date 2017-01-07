@@ -14,7 +14,6 @@ import twitter4j.auth.AccessToken;
 import twitter4j.auth.RequestToken;
 
 /* 
- *
  * This class is directly related to get OAuthConsumerKey and its secret from Twitter when there isn't a OAuthConsumerKey and its secret.
  * ConsumerKey and its secret are required.
  * Access token is obtained from an authorization URL that use the user's account and its password.

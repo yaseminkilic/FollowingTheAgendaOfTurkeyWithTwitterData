@@ -7,7 +7,6 @@ import twitter4j.Status;
 import twitter4j.TwitterException;
 
 /* 
- * 
  * This class is directly related to search the data from Twitter, and insert them into database.
  */
 public class QueryExecution extends Main{
