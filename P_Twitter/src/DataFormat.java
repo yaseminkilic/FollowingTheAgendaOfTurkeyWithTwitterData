@@ -5,7 +5,7 @@ import java.util.Locale;
 import java.util.StringTokenizer;
 
 /* 
- * This class is directly related to format the Twitter data before it is recorded in database.
+ *   This class is directly related to format the Twitter data before it is recorded in database.
  */
 public class DataFormat {
 	

@@ -8,7 +8,7 @@ import java.util.Date;
 import twitter4j.Status;
 
 /* 
- * This class is directly related to create the query for accessing database' data.
+ *   This class is directly related to create the query for accessing database' data.
  * We use that class for the process such as getting list of terms, finding term' id and inserting any Twitter data for our tables, 
  */
 public class DbProcess extends DbConnection{

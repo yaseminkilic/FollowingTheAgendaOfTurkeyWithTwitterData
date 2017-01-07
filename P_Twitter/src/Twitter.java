@@ -1,7 +1,6 @@
 import java.util.Date;
 
 /* 
- * 
  * This class is directly related to use efficiently Twitter data such as date, id, text and name.
  */
 public class Twitter {
