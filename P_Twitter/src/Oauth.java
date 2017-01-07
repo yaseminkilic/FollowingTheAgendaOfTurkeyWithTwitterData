@@ -1,5 +1,6 @@
 
 /* 
+ * 
  * This class is directly related to use consumerKey and consumerSecret variables for OAuth support.
  */
 class Oauth {

@@ -9,6 +9,7 @@ import twitter4j.Twitter;
 public class Main extends Thread{
 
 	/* 
+	 * 
 	 * This class is directly related to authenticate Twitter.
 	 * We use that class for the process such as twitter authentication, configuration, and accessing our list of terms in the database.
 	 */
