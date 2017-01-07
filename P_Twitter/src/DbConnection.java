@@ -5,7 +5,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 
 /* 
- * This class is directly related to connect Twitter.
+ *   This class is directly related to connect Twitter.
  * We use that class for the process such as closing database, accessing twitter connection and getting the list of terms in the database.
  */
 class DbConnection {
@@ -15,6 +15,7 @@ class DbConnection {
 	private ArrayList<String> list = null;
 
 	DbConnection(){}
+	
 	
 	/* 
 	 * Close database connection 
