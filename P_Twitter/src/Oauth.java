@@ -4,7 +4,7 @@
  */
 class Oauth {
 	
-	/* Some useful variables to control class' operations and interaction with other classes. */ 
+	/*  Some useful variables to control class' operations and interaction with other classes. */ 
 	private String consumerKey;
 	private String consumerSecret;
 	
