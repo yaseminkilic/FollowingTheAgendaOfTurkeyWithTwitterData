@@ -9,7 +9,7 @@ import twitter4j.TwitterException;
 /* 
  *  This class is directly related to search the data from Twitter, and insert them into database.
  */
-public class QueryExecution extends Main{
+public class QueryExecution extends ApplicationExecution {
 	
 	/* Instance to create only one execution for searching operation. */ 
 	private QueryExecution instance = null;
@@ -45,7 +45,7 @@ public class QueryExecution extends Main{
 					for (Status status : results[i].getTweets()) {
 						tweetid = insertOriginalTweets(status);
 						
-						if(!state1 || !state2) continue;
+						if((tweetid == 0) || !state1 || !state2) continue;
 						dbprocess.insertTweetAndTerm(status, dbConn, tweetid);
 					}
 					results[i] = twitter.search(query[i]);
@@ -83,7 +83,6 @@ public class QueryExecution extends Main{
 		if(!language.equals("en") || !dataFormat.isInTermList(msg)) return 0;
 		
 		state1 = dbprocess.insertTweet("OriginalTweets", userid, tweetid, msg, time);
-		if(!state1) return 0;
 		msg = dataFormat.formatData(msg);
 		state2 = dbprocess.insertTweet("tweets", userid, tweetid, msg, time);
 		
